@@ -2,9 +2,9 @@
 import random
 number = random.randint(-100000, 100000)
 digit = abs(number) % 10
-if figures < 0:
+if number < 0:
 	digit = -digit
-print(f"Last digit of {number:d} is {digit}")
+print(f"Last digit of {number:d} is {digit} and is ", end="")
 if digit > 5:
 	print("greater than 5")
 elif digit == 0:
