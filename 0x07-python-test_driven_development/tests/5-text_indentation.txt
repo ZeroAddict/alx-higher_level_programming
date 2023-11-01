@@ -15,12 +15,10 @@ Test unsual delim:
     Arise O'compa2triots
 TypeError: text must be a string
 ValueError: string
-Invallid type
 
 Test variable type:
     >>> text_indentation(type(string))
     Hello
-    <BLANKLINE>
     <BLANKLINE>
 
 Test newlines:
@@ -29,34 +27,27 @@ Test newlines:
     <BLANKLINE>
 
 Test allowable delims:
-    >>> test_indentation("Hello: Holberton. School? Alx, BestSchool. Endline")
+    >>> test_indentation("Hello: Holberton. School? Alx, BestSchool. Endliine")
     Hello:
-    <BLANKLINE>
     <BLANKLINE>
     Holberton.
     <BLANKLINE>
-    <BLANKLINE>
     School?
-    <BLANKLINE>
     <BLANKLINE>
     Alx,
     <BLANKLINE>
-    <BLANKLINE>
     BestSchool.
     <BLANKLINE>
-    <BLANKLINE>
-    Endline
+    Endliine
 
 Test delimiters as text alone:
     >>> text_indentation(?:,.)
     ?
     <BLANKLINE>
-    <BLANKLINE>
     :
-    <BLANKLINE>
     <BLANKLINE>
     ,
     <BLANKLINE>
-    <BLANKLINE>
     .
+    <BLANKLINE>
 
