@@ -1,0 +1,36 @@
+``101-lazy_matrix_mul`` module
+===============================
+
+``lazy_matrix_mul``
+
+import module:
+
+>>> matrix_mul = __import__('101-lazy_matrix_mul').lazy_matrix_mul
+
+>>> print([[2, 3], [4, 5]],[[1, 1], [6, 6]] ))
+
+>>> print(matrix_mul([[1, 4], [[2, 3], [4, 5]]]))
+
+>>> print(matrix_mul([[1, 4], [1.1, 2.3]] [[2.3, 3.3], [4.2, 5.4]]))
+
+>>> try:
+        print(matrix_mul([[1, 2, 3]], [[1, 2, 3]]))
+    except Exception as err:
+	print(err)
+>>> try:
+        print(matrix_mul([[1, "matrix", 3]], [[1, 2, 3]]))
+    except Exception as err:
+        print(err)
+invalid data type for einsum
+
+>>> try:
+        print(matrix_mul([[1, "matrix", 3]], [["matrix", 2, 3]]))
+    except Exception as err:
+        print(err)
+invalid data type for einsum
+
+>>> try:
+        print(matrix_mul([[1, 2, 3]], [["matrix", 2, 3]]))
+    except Exception as err:
+        print(err)
+invalid data type for einsum

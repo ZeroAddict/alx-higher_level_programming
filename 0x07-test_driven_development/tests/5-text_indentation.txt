@@ -1,0 +1,62 @@
+``5-text_indentation`` module
+============================
+``text_indentation``
+--------------------
+
+import module:
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Test string argument:
+    >>> text_indentation(1)
+    0
+
+Test unsual delim:
+    >>> text_indentation("Arise O'compa2triots", 2)
+    Arise O'compa2triots
+TypeError: text must be a string
+ValueError: string
+Invallid type
+
+Test variable type:
+    >>> text_indentation(type(string))
+    Hello
+    <BLANKLINE>
+    <BLANKLINE>
+
+Test newlines:
+    >>> text_indentation("sstring\n\n")
+    sstring
+    <BLANKLINE>
+
+Test allowable delims:
+    >>> test_indentation("Hello: Holberton. School? Alx, BestSchool. Endline")
+    Hello:
+    <BLANKLINE>
+    <BLANKLINE>
+    Holberton.
+    <BLANKLINE>
+    <BLANKLINE>
+    School?
+    <BLANKLINE>
+    <BLANKLINE>
+    Alx,
+    <BLANKLINE>
+    <BLANKLINE>
+    BestSchool.
+    <BLANKLINE>
+    <BLANKLINE>
+    Endline
+
+Test delimiters as text alone:
+    >>> text_indentation(?:,.)
+    ?
+    <BLANKLINE>
+    <BLANKLINE>
+    :
+    <BLANKLINE>
+    <BLANKLINE>
+    ,
+    <BLANKLINE>
+    <BLANKLINE>
+    .
+
