@@ -50,8 +50,8 @@ class TestMaxInteger(unittest.TestCase):
     
     def test_inf(self):
         """Unittest for max_integer([..])"""
-        self.assertEqual(max_integer([float('inf'), 30, float('inf'), 5, 6]), 98)
-    
+        self.assertEqual(max_integer([5, 30, float('inf'), 5, 6]), float('inf'))
+
     def test_none(self):
         """Unittest for max_integer([..])"""
         with self.assertRaises(TypeError):
@@ -70,7 +70,7 @@ class TestMaxInteger(unittest.TestCase):
     def test_dict(self):
         """Unittest for max_integer([..])"""
         with self.assertRaises(TypeError):
-            max_integer([{2 : 3, 13 : 14}, {"zab" : "4 5 6"])
+            max_integer([{2 : 3, 13 : 14}, {"zab" : "4 5 6"}])
 
     def test_int(self):
         """Unittest for max_integer([..])"""
@@ -124,7 +124,7 @@ class TestMaxInteger(unittest.TestCase):
             50, 603, 710, -780, -490, 100, 110, 120, -11.30, 104.0,
             -1013, 1040, 256, -3021, -4460, -5081, 606.9, 700.5, 316.0,
             -312.0, 220.1, 305.5, -4101, 510.1, 610.3, 710.0, -7890,
-            -4090, 1010, 1190, 1209, -11300, 1043.0]), 1043.0)
+            -4090, 1010, 119.0, 120.9, -11300, 1043.0]), 1043.0)
 
     def test_negatives(self):
         """Unittest for max_integer([..])"""
