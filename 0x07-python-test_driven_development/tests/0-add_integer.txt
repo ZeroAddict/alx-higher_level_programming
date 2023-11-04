@@ -1,108 +1,258 @@
-``0-add_integer`` module
-=========================
-
-Using ``add_integer``
--------------------------
-
-import function from module:
-    >>> add_integer = __import__('0-add_integer').add_integer
-
-Test one int argument:
-
-    >>> add_integer(2)
-    90
-
-Test one int argument and check second by default:
-
-    >>> add_integer(3)
-    91
-
-Test one int argument:
-
-    >>> add_integer(2.0)
-    90.0
-
-Test one float argument and check second by default:
-
-    >>> add_integer(3.0)
-    91.0
-
-Test two int arguments:
-
-    >>> add_integer(90, 3)
-    93
-
-Test two float arguments:
-
-    >>> add_integer(90.1, 3.0)
-    9
-
-Test two negative integers:
-
-    >>> add_integer(90, 3)
-    93
-
-Test two big integers:
-
-    >>> add_integer(999999991, 999999992)
-    1999999993
-
-Test one integer:
-
-    >>> add_integer(3)
-
-Test one float:
-
-    >>> add_integer(2.2)
-
-Test two integer:
-
-    >>> add_integer(4, 3)
-
-Test two floats:
-
-    >>> add_integer(2.2, 1.1)
-
-Test two negative big ints:
-    >>> add_integer(-99999999, -999999999)
-    -1999999998
-
-Test a float and an integer:
-    >>> add_integer(2.2, 3)
-    1.0
-
-Test Add infinity:
-    >>> add_integer(float('inf'), float('inf'))
+*******************************************************************
+File "0-add_integer.txt", line 8, in 0-add_integer.txt
+Failed example:
+    add_integer = __import__('0-add_integer').add_integer
+Exception raised:
+    Traceback (most recent call last):
+      File "/usr/lib/python3.8/doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest 0-add_integer.txt[0]>", line 1, in <module>
+        add_integer = __import__('0-add_integer').add_integer
+    ModuleNotFoundError: No module named '0-add_integer'
+**********************************************************************
+File "0-add_integer.txt", line 12, in 0-add_integer.txt
+Failed example:
+    add_integer(2)
+Exception raised:
+    Traceback (most recent call last):
+      File "/usr/lib/python3.8/doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest 0-add_integer.txt[1]>", line 1, in <module>
+        add_integer(2)
+    NameError: name 'add_integer' is not defined
+**********************************************************************
+File "0-add_integer.txt", line 17, in 0-add_integer.txt
+Failed example:
+    add_integer(3)
+Exception raised:
+    Traceback (most recent call last):
+      File "/usr/lib/python3.8/doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest 0-add_integer.txt[2]>", line 1, in <module>
+        add_integer(3)
+    NameError: name 'add_integer' is not defined
+**********************************************************************
+File "0-add_integer.txt", line 22, in 0-add_integer.txt
+Failed example:
+    add_integer(2.0)
+Exception raised:
+    Traceback (most recent call last):
+      File "/usr/lib/python3.8/doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest 0-add_integer.txt[3]>", line 1, in <module>
+        add_integer(2.0)
+    NameError: name 'add_integer' is not defined
+**********************************************************************
+File "0-add_integer.txt", line 27, in 0-add_integer.txt
+Failed example:
+    add_integer(3.0)
+Exception raised:
+    Traceback (most recent call last):
+      File "/usr/lib/python3.8/doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest 0-add_integer.txt[4]>", line 1, in <module>
+        add_integer(3.0)
+    NameError: name 'add_integer' is not defined
+**********************************************************************
+File "0-add_integer.txt", line 32, in 0-add_integer.txt
+Failed example:
+    add_integer(90, 3)
+Exception raised:
+    Traceback (most recent call last):
+      File "/usr/lib/python3.8/doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest 0-add_integer.txt[5]>", line 1, in <module>
+        add_integer(90, 3)
+    NameError: name 'add_integer' is not defined
+**********************************************************************
+File "0-add_integer.txt", line 37, in 0-add_integer.txt
+Failed example:
+    add_integer(90.1, 3.0)
+Exception raised:
+    Traceback (most recent call last):
+      File "/usr/lib/python3.8/doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest 0-add_integer.txt[6]>", line 1, in <module>
+        add_integer(90.1, 3.0)
+    NameError: name 'add_integer' is not defined
+**********************************************************************
+File "0-add_integer.txt", line 42, in 0-add_integer.txt
+Failed example:
+    add_integer(90, 3)
+Exception raised:
+    Traceback (most recent call last):
+      File "/usr/lib/python3.8/doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest 0-add_integer.txt[7]>", line 1, in <module>
+        add_integer(90, 3)
+    NameError: name 'add_integer' is not defined
+**********************************************************************
+File "0-add_integer.txt", line 47, in 0-add_integer.txt
+Failed example:
+    add_integer(999999991, 999999992)
+Exception raised:
+    Traceback (most recent call last):
+      File "/usr/lib/python3.8/doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest 0-add_integer.txt[8]>", line 1, in <module>
+        add_integer(999999991, 999999992)
+    NameError: name 'add_integer' is not defined
+**********************************************************************
+File "0-add_integer.txt", line 52, in 0-add_integer.txt
+Failed example:
+    add_integer(3)
+Exception raised:
+    Traceback (most recent call last):
+      File "/usr/lib/python3.8/doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest 0-add_integer.txt[9]>", line 1, in <module>
+        add_integer(3)
+    NameError: name 'add_integer' is not defined
+**********************************************************************
+File "0-add_integer.txt", line 56, in 0-add_integer.txt
+Failed example:
+    add_integer(2.2)
+Exception raised:
+    Traceback (most recent call last):
+      File "/usr/lib/python3.8/doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest 0-add_integer.txt[10]>", line 1, in <module>
+        add_integer(2.2)
+    NameError: name 'add_integer' is not defined
+**********************************************************************
+File "0-add_integer.txt", line 60, in 0-add_integer.txt
+Failed example:
+    add_integer(4, 3)
+Exception raised:
+    Traceback (most recent call last):
+      File "/usr/lib/python3.8/doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest 0-add_integer.txt[11]>", line 1, in <module>
+        add_integer(4, 3)
+    NameError: name 'add_integer' is not defined
+**********************************************************************
+File "0-add_integer.txt", line 64, in 0-add_integer.txt
+Failed example:
+    add_integer(2.2, 1.1)
+Exception raised:
+    Traceback (most recent call last):
+      File "/usr/lib/python3.8/doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest 0-add_integer.txt[12]>", line 1, in <module>
+        add_integer(2.2, 1.1)
+    NameError: name 'add_integer' is not defined
+**********************************************************************
+File "0-add_integer.txt", line 67, in 0-add_integer.txt
+Failed example:
+    add_integer(-99999999, -999999999)
+Exception raised:
+    Traceback (most recent call last):
+      File "/usr/lib/python3.8/doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest 0-add_integer.txt[13]>", line 1, in <module>
+        add_integer(-99999999, -999999999)
+    NameError: name 'add_integer' is not defined
+**********************************************************************
+File "0-add_integer.txt", line 71, in 0-add_integer.txt
+Failed example:
+    add_integer(2.2, 3)
+Exception raised:
+    Traceback (most recent call last):
+      File "/usr/lib/python3.8/doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest 0-add_integer.txt[14]>", line 1, in <module>
+        add_integer(2.2, 3)
+    NameError: name 'add_integer' is not defined
+**********************************************************************
+File "0-add_integer.txt", line 75, in 0-add_integer.txt
+Failed example:
+    add_integer(float('inf'), float('inf'))
+Expected:
     Traceback (most recent call last):
     ...
     OverflowError: cannot convert float to integer
-
-Test second arg Add NaN:
-    >>> add_integer(3, float('nan'))
+Got:
+    Traceback (most recent call last):
+      File "/usr/lib/python3.8/doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest 0-add_integer.txt[15]>", line 1, in <module>
+        add_integer(float('inf'), float('inf'))
+    NameError: name 'add_integer' is not defined
+**********************************************************************
+File "0-add_integer.txt", line 81, in 0-add_integer.txt
+Failed example:
+    add_integer(3, float('nan'))
+Expected:
     Traceback (most recent call last):
     ...
     ValueError: cannot convert float to integer
-
-Test second argument invalid:
-    >>> add_integer(2, "foo")
+Got:
+    Traceback (most recent call last):
+      File "/usr/lib/python3.8/doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest 0-add_integer.txt[16]>", line 1, in <module>
+        add_integer(3, float('nan'))
+    NameError: name 'add_integer' is not defined
+**********************************************************************
+File "0-add_integer.txt", line 87, in 0-add_integer.txt
+Failed example:
+    add_integer(2, "foo")
+Expected:
     Traceback (most recent call last):
     ...
     TypeError: b must be an integer
-
-Test first argument invalid:
-    >>> add_integer("foo", 2)
+Got:
+    Traceback (most recent call last):
+      File "/usr/lib/python3.8/doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest 0-add_integer.txt[17]>", line 1, in <module>
+        add_integer(2, "foo")
+    NameError: name 'add_integer' is not defined
+**********************************************************************
+File "0-add_integer.txt", line 93, in 0-add_integer.txt
+Failed example:
+    add_integer("foo", 2)
+Expected:
     Traceback (most recent call last):
     ...
     TypeError: a must be an integer
-
-Test both arguments invalid:
-    >>> add_integer(None, "foo")
+Got:
+    Traceback (most recent call last):
+      File "/usr/lib/python3.8/doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest 0-add_integer.txt[18]>", line 1, in <module>
+        add_integer("foo", 2)
+    NameError: name 'add_integer' is not defined
+**********************************************************************
+File "0-add_integer.txt", line 99, in 0-add_integer.txt
+Failed example:
+    add_integer(None, "foo")
+Expected:
     Traceback (most recent call last):
     ...
     TypeError: a must be an integer
-
-Test two string args:
-    >>> add_integer("bar", "foo")
+Got:
+    Traceback (most recent call last):
+      File "/usr/lib/python3.8/doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest 0-add_integer.txt[19]>", line 1, in <module>
+        add_integer(None, "foo")
+    NameError: name 'add_integer' is not defined
+**********************************************************************
+File "0-add_integer.txt", line 105, in 0-add_integer.txt
+Failed example:
+    add_integer("bar", "foo")
+Expected:
     Traceback (most recent call last):
     ...
     TypeError: a must be an integer
+Got:
+    Traceback (most recent call last):
+      File "/usr/lib/python3.8/doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest 0-add_integer.txt[20]>", line 1, in <module>
+        add_integer("bar", "foo")
+    NameError: name 'add_integer' is not defined
+**********************************************************************
+1 items had failures:
+  21 of  21 in 0-add_integer.txt
